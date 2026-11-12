@@ -1,0 +1,1 @@
+Lihat [README utama](../README.md) untuk panduan lengkap.
