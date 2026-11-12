@@ -1,0 +1,35 @@
+name: Backend CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: backend
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Pasang PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          # Samakan dengan versi PHP lokalmu (php -v) dan syarat di backend/composer.json
+          php-version: '8.3'
+          extensions: mbstring, pdo_sqlite, sqlite3
+          coverage: none
+
+      - name: Pasang dependensi
+        run: composer install --prefer-dist --no-progress
+
+      - name: Siapkan environment
+        run: |
+          cp .env.example .env
+          php artisan key:generate
+
+      - name: Jalankan tes
+        run: php artisan test
