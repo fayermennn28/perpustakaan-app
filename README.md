@@ -1,7 +1,7 @@
-# Sistem Perpustakaan
+﻿# Sistem Perpustakaan
 
-![Backend CI](https://github.com/fayermenn28/perpustakaan-app/actions/workflows/backend-ci.yml/badge.svg)
-![Mobile CI](https://github.com/fayermenn28/perpustakaan-app/actions/workflows/mobile-ci.yml/badge.svg)
+![Backend CI](https://github.com/fayermennn28/perpustakaan-app/actions/workflows/backend-ci.yml/badge.svg)
+![Mobile CI](https://github.com/fayermennn28/perpustakaan-app/actions/workflows/mobile-ci.yml/badge.svg)
 
 Sistem manajemen perpustakaan **full-stack** yang terdiri dari website admin berbasis Laravel dan aplikasi mobile berbasis Flutter untuk anggota. Kedua platform terhubung melalui REST API dengan autentikasi token menggunakan Laravel Sanctum.
 
@@ -137,7 +137,7 @@ erDiagram
 Clone repository:
 
 ```bash
-git clone https://github.com/fayermenn28/perpustakaan-app.git
+git clone https://github.com/fayermennn28/perpustakaan-app.git
 cd perpustakaan-app
 ```
 
