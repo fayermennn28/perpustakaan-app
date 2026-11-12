@@ -1,4 +1,4 @@
-name: Backend CI
+﻿name: Backend CI
 
 on:
   push:
@@ -19,7 +19,7 @@ jobs:
         uses: shivammathur/setup-php@v2
         with:
           # Samakan dengan versi PHP lokalmu (php -v) dan syarat di backend/composer.json
-          php-version: '8.3'
+          php-version: '8.4'
           extensions: mbstring, pdo_sqlite, sqlite3
           coverage: none
 
